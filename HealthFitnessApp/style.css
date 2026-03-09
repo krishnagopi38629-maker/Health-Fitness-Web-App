@@ -1,0 +1,88 @@
+/* ---------- GLOBAL STYLES ---------- */
+body {
+    font-family: Arial;
+    background: #e3f2fd;
+    text-align: center;
+}
+
+h1 {
+    color: #0d47a1;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+    background: white;
+    width: 450px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+/* ---------- INPUTS & BUTTONS ---------- */
+input, button {
+    width: 90%;
+    padding: 10px;
+    margin: 8px;
+}
+
+/* ---------- TABLE STYLES ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #333;
+    font-size: 14px;
+}
+
+/* ---------- IMAGE ROW (DASHBOARD) ---------- */
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.image-row img {
+    width: 180px;
+    height: 120px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* ---------- INPUT BOX WITH ICONS ---------- */
+.input-box {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+/* Left icons (user, email, lock) */
+.input-box i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555;
+}
+
+/* Input field spacing for icons */
+.input-box input {
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 40px;
+}
+
+/* ---------- PASSWORD EYE ICON ---------- */
+.eye {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #555;
+}

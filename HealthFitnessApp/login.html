@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Login</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<h1>Login</h1>
+
+<div class="container">
+<form action="login.php" method="post">
+
+    <!-- Email -->
+    <div class="input-box">
+        <i class="fa fa-envelope"></i>
+        <input type="email" name="email" placeholder="Email" required>
+    </div>
+
+    <!-- Password with eye -->
+    <div class="input-box">
+        <i class="fa fa-lock"></i>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <i class="fa fa-eye eye" onclick="togglePassword()"></i>
+    </div>
+
+    <button type="submit">Login</button>
+</form>
+
+<a href="register.html">New user? Register</a>
+</div>
+
+<script>
+function togglePassword() {
+    const pwd = document.getElementById("password");
+    pwd.type = pwd.type === "password" ? "text" : "password";
+}
+</script>
+
+</body>
+</html>
